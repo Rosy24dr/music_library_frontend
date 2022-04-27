@@ -3,10 +3,9 @@ import './DisplayMusic.css'
 
 const DisplayMusicTable = (props) => {
   return (
-    <div>
-      <h2>Music Library</h2>
       <table>
-        <tbody className="container-fluid">
+           <div> <h2>Music Library</h2></div>
+        <tbody>
           <tr>
             <th>Title</th>
             <th>Artist</th>
@@ -29,7 +28,6 @@ const DisplayMusicTable = (props) => {
           ))};
         </tbody>
       </table>
-    </div>
   );
 };
 

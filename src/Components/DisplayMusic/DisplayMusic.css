@@ -1,10 +1,32 @@
-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 40px;
+h2 {
+    background-color: black;
+    color:  white;
+    display: flex;
 }
 
-/* .container{
-    display: grid
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  box-shadow: 1px 1px;
+}
 
-} */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 3px solid black;
+  font-family: monospace;
+  background: url("../../Images/nick-fewings-ka7REB1AJl4-unsplash.jpg");
+}
+
+tbody th,
+td {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+th{
+    font-size: 18px;
+    text-decoration: line-through;
+}
