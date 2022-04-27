@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <header >
-        <DisplayMusic songs={getAllSongs}/>
+        <DisplayMusic songs = {songs} displayMusic={getAllSongs}/>
       </header>
     </div>
   );
