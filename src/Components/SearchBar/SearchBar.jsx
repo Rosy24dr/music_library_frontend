@@ -9,7 +9,7 @@ const SearchBar = (props) => {
   let handleChange = (e) => {
     var lowerCase = e.target.value.toLowerCase();
     setSearch(lowerCase);
-    props.filtered(search)
+    props.filtered(lowerCase)
   };
 
   return (

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import axios from "axios";
 
 
 const CreateSong = (props) => {
@@ -9,7 +10,7 @@ const CreateSong = (props) => {
     const [genre, setGenre]= useState('')
 
     function handlesubmit(event){
-        event.prevendefault();
+        event.preventDefault();
         let newSong ={
             title: title, 
             artist: artist,
@@ -64,7 +65,7 @@ const CreateSong = (props) => {
                 <input 
                 type="text"
                 value={genre}
-                placeholder="Enter album"
+                placeholder="Enter genre"
                 onChange={(event) => setGenre(event.target.value)}
                 />
             </div>
