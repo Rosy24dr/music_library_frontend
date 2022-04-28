@@ -37,6 +37,10 @@ function App() {
         return true;
       } else if (song.genre.toLowerCase().includes(props)) {
         return true;
+      }else if (song.image_link.toLowerCase().includes(props)) {
+        return true;
+      }else if (song.likes.toLowerCase().includes(props)) {
+        return true;
       }
     });
     setFilteredSongs(filteredData);

@@ -8,6 +8,8 @@ const CreateSong = (props) => {
     const [album, setAlbum]= useState('')
     const [release_date, setReleaseDate]= useState('')
     const [genre, setGenre]= useState('')
+    const [likes, setLikes]= useState('')
+    const [image_link, setImageLink]= useState('')
 
     function handlesubmit(event){
         event.preventDefault();
@@ -17,6 +19,8 @@ const CreateSong = (props) => {
             album: album,
             release_date: release_date,
             genre: genre,
+            likes: likes,
+            image_link: image_link,
         };
         console.log(newSong);
         props.createSong(newSong)
@@ -67,6 +71,24 @@ const CreateSong = (props) => {
                 value={genre}
                 placeholder="Enter genre"
                 onChange={(event) => setGenre(event.target.value)}
+                />
+            </div>
+            <div>
+                <label>Likes</label>
+                <input 
+                type="link"
+                value={likes}
+                placeholder="Enter likes"
+                onChange={(event) => setLikes(event.target.value)}
+                />
+            </div>
+            <div>
+                <label>Image link</label>
+                <input 
+                type="link"
+                value={image_link}
+                placeholder="Enter link"
+                onChange={(event) => setImageLink(event.target.value)}
                 />
             </div>
             <button>Submit</button>
