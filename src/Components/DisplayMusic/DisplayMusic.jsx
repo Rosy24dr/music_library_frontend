@@ -23,7 +23,8 @@ const DisplayMusicTable = (props) => {
               <td>{song.release_date}</td>
               <td>{song.genre}</td>
               <td>{song.likes}</td>
-              <td><a href= ""><img src={song.image_link} target="-blank" alt="Images of the songs"/></a></td>
+              <td><a href= "/"><img src={song.image_link} target="-blank" alt="Images of the songs"/></a></td>
+              <td><button>Delete Song</button></td>
             </tr>
           ))};
         </tbody>
