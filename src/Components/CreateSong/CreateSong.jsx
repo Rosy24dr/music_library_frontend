@@ -26,7 +26,7 @@ const CreateSong = (props) => {
         props.createSong(newSong)
     }
     return(
-        <form onSubmit={handlesubmit} id="oval">
+        <form onSubmit={handlesubmit} id="form">
             <p>Add song:</p>
             <div>
                 <label>Title:</label>

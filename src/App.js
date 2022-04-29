@@ -43,7 +43,7 @@ function App() {
     setFilteredSongs(filteredData);
   }
   return (
-    <div>
+    <div className="background">
       <header>
         <SearchBar searchBar={songs} filtered={filteredMusic} />
         <CreateSong createSong={addNewSong}/>
