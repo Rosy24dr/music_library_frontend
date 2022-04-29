@@ -1,7 +1,11 @@
 h2 {
     background-color: black;
-    color:  white;
+    color:  #ffffff;
     display: flex;
+    padding:1px;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: -4px;
 }
 
 img {
@@ -13,20 +17,26 @@ img {
 
 table {
   table-layout: fixed;
+  color: black;
+  text-shadow: 0 0 3px white, 0 0 2px pink;
   width: 100%;
   border: 3px solid black;
   font-family: monospace;
   background: url("../../Images/nick-fewings-ka7REB1AJl4-unsplash.jpg");
 }
 
-tbody th,
-td {
+tbody th, 
+td{
   text-align: center;
   padding: 10px;
-  font-weight: bold;
 }
 
 th{
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: line-through;
+}
+
+td{
+  font-size: 14px;
+  font-weight: bolder;
 }

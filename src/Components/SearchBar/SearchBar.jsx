@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import SearchIcon from '@mui/icons-material/Search';
+import "./SearchBar.css"
 
 
 const SearchBar = (props) => {
@@ -13,18 +13,18 @@ const SearchBar = (props) => {
   };
 
   return (
-    <form action="/" method="get">
+    <form >
+        <div >
         <div>
-            <div>
-        <input
-            type="text"
-            placeholder="Enter Text"
-            value={search}
-            onChange={handleChange}
-        />
-        <div><SearchIcon/></div>
+            <input
+                type="text"
+                placeholder="Enter Text"
+                value={search}
+                onChange={handleChange}
+                className="searchInput"
+            />
         </div>
-        <button type="submit">Search</button>
+        <button className="searchButton" type="submit">Search</button>
       </div>
     </form>
   );

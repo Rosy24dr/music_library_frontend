@@ -25,7 +25,6 @@ function App() {
 
 
   function filteredMusic(props) {
-    console.log(props)
     const filteredData = songs.filter((song) => {
       if (song.title.toLowerCase().includes(props)) {
         return true;
@@ -37,9 +36,7 @@ function App() {
         return true;
       } else if (song.genre.toLowerCase().includes(props)) {
         return true;
-      }else if (song.image_link.toLowerCase().includes(props)) {
-        return true;
-      }else if (song.likes.toLowerCase().includes(props)) {
+      }else if (song.image_link.includes(props)) {
         return true;
       }
     });
@@ -50,7 +47,7 @@ function App() {
       <header>
         <SearchBar searchBar={songs} filtered={filteredMusic} />
         <CreateSong createSong={addNewSong}/>
-        <DisplayMusic songs={filteredSongs} displayMusic={getAllSongs} />
+        <DisplayMusic songs={filteredSongs} displayMusic={getAllSongs}  />
       </header>
     </div>
   );

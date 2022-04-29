@@ -5,10 +5,9 @@ import './DisplayMusic.css'
 
 const DisplayMusicTable = (props) => {
   return (
+    <div>
+      <div> <h2>Music Library</h2></div>
       <table>
-           <div> <h2>Music Library</h2></div>
-           {/* <div><SearchBar/></div>
-           <div><CreateSong/></div> */}
         <tbody>
           <tr>
             <th>Title</th>
@@ -33,6 +32,7 @@ const DisplayMusicTable = (props) => {
           ))};
         </tbody>
       </table>
+    </div>
   );
 };
 
