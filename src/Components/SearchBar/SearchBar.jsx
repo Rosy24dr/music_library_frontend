@@ -18,7 +18,7 @@ const SearchBar = (props) => {
         <span>
             <input
                 type="text"
-                placeholder="Search Here"
+                placeholder="Search Music Library Here"
                 value={search}
                 onChange={handleChange}
                 className="searchInput"

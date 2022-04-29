@@ -5,6 +5,7 @@ import DisplayMusic from "./Components/DisplayMusic/DisplayMusic";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import CreateSong from "./Components/CreateSong/CreateSong";
 
+
 function App() {
   const [songs, setSongs] = useState([]);
   const [filteredSongs, setFilteredSongs] = useState([])
@@ -46,8 +47,8 @@ function App() {
     <div className="background">
       <header>
         <SearchBar searchBar={songs} filtered={filteredMusic} />
-        <CreateSong createSong={addNewSong}/>
         <DisplayMusic songs={filteredSongs} displayMusic={getAllSongs}  />
+        <CreateSong createSong={addNewSong}/>
       </header>
     </div>
   );

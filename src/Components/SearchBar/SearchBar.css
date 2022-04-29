@@ -1,8 +1,14 @@
 .searchInput{
     box-shadow: 0 0 black;
     border-radius: 10px;
-    padding: 10px;
     align-items: center;
-    margin:  ;
+    position: relative;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+    
 }
 

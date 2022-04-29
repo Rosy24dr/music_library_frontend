@@ -1,14 +1,12 @@
 import React from "react";
-import CreateSong from "../CreateSong/CreateSong";
-import SearchBar from "../SearchBar/SearchBar";
 import './DisplayMusic.css'
 
 const DisplayMusicTable = (props) => {
   return (
     <div>
-      <div> <h2>Music Library</h2></div>
       <table>
         <tbody>
+        <div> <h2>Music Library</h2></div>
           <tr>
             <th>Title</th>
             <th>Artist</th>

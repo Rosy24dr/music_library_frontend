@@ -1,11 +1,7 @@
 h2 {
     background-color: black;
     color:  #ffffff;
-    display: flex;
-    padding:1px;
-    text-align: center;
-    flex-direction: column;
-    margin-bottom: -4px;
+    margin-top: -5px;
 }
 
 img {
@@ -17,9 +13,10 @@ img {
 
 table {
   table-layout: fixed;
+  margin-left: 26%;
   color: black;
   text-shadow: 0 0 3px white, 0 0 2px pink;
-  width: 100%;
+  width: 50%;
   border: 3px solid black;
   font-family: monospace;
   background: url("../../Images/nick-fewings-ka7REB1AJl4-unsplash.jpg");
